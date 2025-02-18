@@ -102,12 +102,6 @@ exports.login = async (req, res) => {
         }
       );
 
-      //   // Send email upon successful login
-      //   const subject = "Successful Login";
-      //   const text = `Hello ${user.username},\n\nYou have successfully logged in.`;
-
-      // sendEmail(user.email, subject, text);
-
       // Remove sensitive information before sending the response
       user.password = undefined;
 
