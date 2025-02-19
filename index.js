@@ -22,7 +22,9 @@ app.get("/ping", (req, res) => {
     status: "pong 🏓",
   });
 });
-const port = 3000;
+
+const port = process.env.PORT || 4000;
+
 app.listen(port, (err, res) => {
   if (err) {
     console.log(err);
